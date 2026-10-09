@@ -76,12 +76,12 @@ int Addition(int iNo1, int iNo2)
 
 int main()
 {
-    int 1value1 = 0, ivalue2 = 0, iresult = 0;
+    int ivalue1 = 0, ivalue2 = 0, iresult = 0;
 
-    printf("Enter First Number: "\n);
+    printf("Enter First Number: \n");
     scanf("%d", &ivalue1);
 
-    printf("Enter Second Number: "\n);
+    printf("Enter Second Number: \n");
     scanf("%d", &ivalue2);
 
     iresult = Addition( ivalue1, ivalue2);  
