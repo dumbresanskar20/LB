@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class program23
+class program24
 {
     public static void main(String A[])
     {
@@ -10,7 +10,7 @@ class program23
         scanner = new Scanner(System.in);
 
         System.out.println("Enter your name: ");
-        String sName = scanner.nextLine();
+        String sName = scanner.next();
 
         System.out.println("Welcome "+ sName);
     }
