@@ -8,10 +8,10 @@ int main()
     float fMarks = 0.0;
 
     printf("Enter your Name : \n");
-    scanf("%[^'\n']s", sName);                      //Enter remains in input buffer
+    scanf("%[^'\n']s", sName);                      //Space Added to remove the invisible error
 
     printf("Enter your Age :\n");
-    scanf("%d", &iAge);
+    scanf(" %d", &iAge);
 
     printf("Enter your Marks :\n");
     scanf("%f", &fMarks);

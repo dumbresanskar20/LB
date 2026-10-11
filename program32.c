@@ -10,6 +10,8 @@ int main()
     printf("Enter your Name : \n");
     scanf("%[^'\n']s", sName);                      //Enter remains in input buffer
 
+    // fflush(stdin);                               //Used to solve the above input buffer error 
+
     printf("Enter your Age :\n");
     scanf("%d", &iAge);
 
