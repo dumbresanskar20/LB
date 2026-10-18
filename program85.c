@@ -1,3 +1,16 @@
+/*
+============================================================
+            Operation &&
+============================================================
+| Result 1       |      Result 2       |     Final Result  |
+============================================================
+| TRUE           |     TRUE            |       TRUE        |
+| TRUE           |     FALSE           |       FALSE       |
+| FALSE          |     TRUE            |       FALSE       |
+| FALSE          |     FALSE           |       FALSE       |
+============================================================
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -16,7 +29,7 @@ void CheckDivisible(int iNo)
 int main()
 {
     int iValue = 0;
-    
+
     printf("Enter Number : \n");
     scanf("%d", &iValue);
 
