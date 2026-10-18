@@ -28,3 +28,6 @@ int main()
 
     return EXIT_SUCCESS;
 }
+
+
+//  Time complexity of this program is O(N) where N is the input number.
