@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<stdbool.h>
 
-bool CheckPerfect(int iNo)
+void CheckPerfect(int iNo)
 {
     int iCnt = 0;
     int iSum = 0;
@@ -19,33 +19,23 @@ bool CheckPerfect(int iNo)
     }
     if(iSum == iNo)
     {
-        return true;
+        printf("%d is a Perfect Number\n", iNo);
     }
     else
     {
-        return false;       
+        printf("%d is not a Perfect Number\n", iNo);
     }
 }       
 
 
 int main()
 {
-    int iValue = 0; 
-    bool bRet = false;
+    int iValue = 0;     
 
     printf("Enter Number : \n");
     scanf("%d", &iValue);
     
-    bRet = CheckPerfect(iValue);
-
-    if(bRet == true)
-    {
-        printf("%d is a Perfect Number\n", iValue);
-    }
-    else
-    {
-        printf("%d is not a Perfect Number\n", iValue);
-    }
+    CheckPerfect(iValue);
 
     return EXIT_SUCCESS;
 }

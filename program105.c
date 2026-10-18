@@ -19,23 +19,33 @@ bool CheckPerfect(int iNo)
     }
     if(iSum == iNo)
     {
-        printf("%d is a Perfect Number\n", iNo);
+        return true;
     }
     else
     {
-        printf("%d is not a Perfect Number\n", iNo);
+        return false;       
     }
 }       
 
 
 int main()
 {
-    int iValue = 0;     
+    int iValue = 0; 
+    bool bRet = false;
 
     printf("Enter Number : \n");
     scanf("%d", &iValue);
     
-    CheckPerfect(iValue);
+    bRet = CheckPerfect(iValue);
+
+    if(bRet == true)
+    {
+        printf("%d is a Perfect Number\n", iValue);
+    }
+    else
+    {
+        printf("%d is not a Perfect Number\n", iValue);
+    }
 
     return EXIT_SUCCESS;
 }
